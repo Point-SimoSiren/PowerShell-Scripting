@@ -11,8 +11,12 @@ foreach ($file in $filesToDelete) {
 }
 Write-Host "Ladatut tyhjennetty."
 
-# Poistaa kaikki tiedostot ja kansiot roskakorista
+# Poistaa kaikki tiedostot ja kansiot myös roskakorista
 $Shell = New-Object -ComObject Shell.Application
 $RecycleBin = $Shell.Namespace(10)
 $RecycleBin.Items() | ForEach-Object { Remove-Item $_.Path -Recurse -Force }
- Write-Host "Roskis tyhjennetty."
+ Write-Host -ForegroundColor "green" "Roskis tyhjennetty."
+
+ # Exe tiedoston luonti em. scriptistä:
+# Install-Module -Name ps2exe -Scope CurrentUser (jos ei ole asennettu ps2exe:ä vielä)
+# Invoke-ps2exe .\LadatutPois.ps1 -output .\LadatutPois.exe
