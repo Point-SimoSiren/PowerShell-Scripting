@@ -1,5 +1,5 @@
 # Määritä tarkistettava kansio ja kokoraja (esim. 100 MB)
-$kansio = "C:\koodit"
+$kansio = "C:\tallenteet"
 $kokorajaMB = 20
 
 # Etsi suurimmat tiedostot

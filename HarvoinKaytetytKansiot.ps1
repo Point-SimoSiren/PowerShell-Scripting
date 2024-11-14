@@ -14,7 +14,7 @@ if ($months -le 0) {
 $dateThreshold = (Get-Date).AddMonths(-$months)
 
 # Kansion polku, josta haluat etsiä (muuta tarvittaessa)
-$folderPath = "C:\example\path"
+$folderPath = "C:\tallenteet"
 
 # Tarkistetaan, että kansio on olemassa
 if (-Not (Test-Path -Path $folderPath)) {
