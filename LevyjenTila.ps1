@@ -3,7 +3,6 @@
 
 Get-PSDrive -PSProvider FileSystem
 
-
 # Hifistelyä: antaa myös aseman nimen esim Windows ja vapaan tilan prosentteina:
 
 Get-WmiObject -Class Win32_LogicalDisk |

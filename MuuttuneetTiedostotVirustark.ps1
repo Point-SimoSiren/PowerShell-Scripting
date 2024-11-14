@@ -1,6 +1,6 @@
 # Määritä kansio ja päivämäärärajat
 $kansio = "C:\tallenteet"
-$aikaRaja = (Get-Date).AddDays(-2)
+$aikaRaja = (Get-Date).AddDays(-7)
 
 # Hae tiedostot, jotka on muutettu viikon sisällä
 $muuttuneetTiedostot = Get-ChildItem -Path $kansio -Recurse | Where-Object {
@@ -11,8 +11,7 @@ $muuttuneetTiedostot = Get-ChildItem -Path $kansio -Recurse | Where-Object {
 foreach ($tiedosto in $muuttuneetTiedostot) {
     Write-Host -ForegroundColor yellow "Tarkistetaan tiedosto: $($tiedosto.FullName)"
     
-    # Tässä kohtaa voit lisätä komentorivikäskyn oikean virustarkistuksen suorittamiseen
-    # Esimerkiksi Windows Defenderillä:
+    # Virustarkistuksen suorittaminen Windows Defenderillä:
     Start-Process -FilePath "C:\Program Files\Windows Defender\MpCmdRun.exe" -ArgumentList "-Scan", "-File", "$($tiedosto.FullName)" 
 
     Write-Host -ForegroundColor green "- ok -"
