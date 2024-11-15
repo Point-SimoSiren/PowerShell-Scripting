@@ -1,4 +1,5 @@
 ## Tämä toimii vain jos AD server on käytössä ##
+## En ole saanut toimimaan omassa koneessa ##
 
 # Tarkitus onko AD moduulia koneella
 # Get-Module -ListAvailable -Name ActiveDirectory
