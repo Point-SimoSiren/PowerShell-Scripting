@@ -1,9 +1,9 @@
+# VIRUSTARKISTUS
 
+# Kohdetiedoston polku
+$tiedosto = "C:\koodit\PS-Scriptit\TyhjennaRoskakori.ps1"
 
-# Tiedoston polku
-$tiedosto = "C:\koodit\PS-Scriptit\Muumit.ps1"
-
-# Määrittele skannauksen komento
+# Määrittele virusskannauksen komento
 $scanCommand = "C:\Program Files\Windows Defender\MpCmdRun.exe"
 $scanArguments = "-Scan -File $tiedosto"
 

@@ -1,6 +1,6 @@
 # Määritä kansio ja päivämäärärajat
-$kansio = "C:\tallenteet"
-$aikaRaja = (Get-Date).AddDays(-7)
+$kansio = "C:\koodit\PS-SCRIPTIT"
+$aikaRaja = (Get-Date).AddDays(-1)
 
 # Hae tiedostot, jotka on muutettu viikon sisällä
 $muuttuneetTiedostot = Get-ChildItem -Path $kansio -Recurse | Where-Object {
@@ -11,6 +11,7 @@ $muuttuneetTiedostot = Get-ChildItem -Path $kansio -Recurse | Where-Object {
 foreach ($tiedosto in $muuttuneetTiedostot) {
     Write-Host -ForegroundColor yellow "Tarkistetaan tiedosto: $($tiedosto.FullName)"
     
+
     # Virustarkistuksen suorittaminen Windows Defenderillä:
     Start-Process -FilePath "C:\Program Files\Windows Defender\MpCmdRun.exe" -ArgumentList "-Scan", "-File", "$($tiedosto.FullName)" 
 

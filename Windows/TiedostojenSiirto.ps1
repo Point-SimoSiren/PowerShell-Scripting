@@ -1,6 +1,6 @@
 # Määritä lähde- ja kohdekansiot
-$lähde = "C:\Kansio1"
-$kohde = "C:\Kansio2"
+$lähde = "C:\Kansiopolku\jotain"
+$kohde = "C:\Kansiopolku\jotain"
 
 # Etsi kaikki .txt-tiedostot ja siirrä ne
 Get-ChildItem -Path $lähde -Filter *.txt | ForEach-Object {

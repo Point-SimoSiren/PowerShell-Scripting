@@ -4,6 +4,9 @@
 # PowerShellilla voidaan pakata kansio ZIP-tiedostoksi käyttämällä
 # sisäänrakennettua .NET Frameworkin luokkaa System.IO.Compression.ZipFile
 
+# Tämä voisi olla varmuuskopiointirutiini, joka pakkaa kohteen
+# ja siirtää sen esim. toiselle asemalle
+
 # Kansion polku, joka halutaan pakata
 $SourceFolder = "C:\Koodit\PS-SCRIPTIT"
 
