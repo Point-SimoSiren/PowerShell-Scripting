@@ -19,8 +19,8 @@ Connect-AzAccount
 
 # Anna sopivat arvot kaikkiin
 $resourceGroupName = "myResourceGroup"
-# Get-AzLocation #Listaa eri sijainnit. Alla on West USA, mikä sekin on ihan ok.
-$location = "westus2"
+# Get-AzLocation #Listaa eri sijainnit
+$location = "northeurope"
 $appName = "myStaticWebApp"
 $githubRepo = "https://github.com/your-github-account/your-repo"
 $branch = "main"
