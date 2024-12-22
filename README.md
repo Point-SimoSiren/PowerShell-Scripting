@@ -1,11 +1,11 @@
 LUE TÄMÄ
 ========
 
-Ei kannata ladata tätä repoa itselleen käytettäväksi, koska silloin se ei ole sinun
+Ei kannata ladata tai kloonata tätä repoa itselleen käytettäväksi, koska silloin se ei ole sinun
 koneella luotu, eikä näitä ole digitaalisesti signeerattu, joten koneesi remote signed asetus ei salli näiden
 suorittamista.
-Perusta oma kansio ja luo tarvitsemasi tiedostot käsin. Koodin voi toki ottaa Copy - Paste tyylillä
-näistä tiedostoista.
+Perusta oma kansio ja luo tarvitsemasi tiedostot käsin. Koodin voit ottaa Copy - Paste tyylillä
+näistä tiedostoista jos haluat.
 
 LUE TÄMÄ LIITTYEN 2. VIIKON AZURE OSUUTEEN
 ==========================================
@@ -28,11 +28,10 @@ Azure CLI ei ole PowerShellin oma moduuli vaan sitä voidaan käyttää mm. CMD,
 Ainakin static web app esimerkki kurssillamme käyttää Azure CLI:tä.
 
 Azure CLI voidaan asentaa täältä:
-A [link]
-(https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli#install-or-update)
+https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli#install-or-update
 
-Olen käyttäntyt 4 eri vaihtoehdosta tätä:
-Microsoft Installer (MSI)
+Asennussivulla on 4 eri vaihtoehtoa asennukseen. Olen käyttänyt Microsoft Installer (MSI):tä ja 64 bittistä versiota.
+Se on toiminut hyvin.
 
 Az ja Azure CLI yhdistely
 -------------------------
