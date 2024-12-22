@@ -1,7 +1,16 @@
+LUE TÄMÄ
+========
+
+Ei kannata ladata tätä repoa itselleen käytettäväksi, koska silloin se ei ole sinun
+koneella luotu, eikä näitä ole digitaalisesti signeerattu, joten koneesi remote signed asetus ei salli näiden
+suorittamista.
+Perusta oma kansio ja luo tarvitsemasi tiedostot käsin. Koodin voi toki ottaa Copy - Paste tyylillä
+näistä tiedostoista.
+
 LUE TÄMÄ LIITTYEN 2. VIIKON AZURE OSUUTEEN
 ==========================================
 
-PowerShellin Azure moduuli
+PowerShell Azure moduuli (Az)
 --------------------------
 Asennus komento joka annetaan PowerShelliin:
 Install-Module -Name Az -Repository PSGallery -Force
@@ -12,22 +21,25 @@ Ainakin MVC julkaisuesimerkki hyödyntää tätä moduulia.
 Jos tarvitsee päivittää moduuli joskus:
 Update-Module -Name Az -Force
 
-Puolestaan:
-
-Ainakin static web app esimerkki käyttää Azure CLI:tä.
+Azure CLI
+---------
 
 Azure CLI ei ole PowerShellin oma moduuli vaan sitä voidaan käyttää mm. CMD, PowerShell, Bash.. komentorivityökalulla.
+Ainakin static web app esimerkki kurssillamme käyttää Azure CLI:tä.
 
-Se voidaan asentaa täältä:
+Azure CLI voidaan asentaa täältä:
 A [link]
 (https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli#install-or-update)
 
 Olen käyttäntyt 4 eri vaihtoehdosta tätä:
 Microsoft Installer (MSI)
 
-Näitä komentoja voi käyttää sekaisin samoissa scripteissä, mutta yksi komento on syytä tehdä yhdellä "kielellä".
+Az ja Azure CLI yhdistely
+-------------------------
+Molempien komentoja sisältäviä skriptejä voidaan tallettaa PowerShell:in .ps1 tiedostoon yhtälailla.
+
+Molempien komentoja voi käyttää sekaisin samoissa scripteissä, mutta yksi komento on syytä tvoi ottaaehdä yhdellä "kielellä".
+
 Jos luo muuttujan yhdellä kielellä, ei voi viitata siihen toisella.
 On kuitenkin mahdollista tallettaa muuttujia ympäristömuuttujiksi yhdellä kielellä ja sitten
-toinen kieli hakee arvon siitä ympäristömuuttujasta.
-
-Näitä molempia voi tallettaa .ps1 tiedostoon yhtälailla.
+toinen kieli perustaa oman muuttujansa ja hakee sille arvon siitä ympäristömuuttujasta suoritustilanteessa.
