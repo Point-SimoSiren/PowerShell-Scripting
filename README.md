@@ -37,7 +37,7 @@ Az ja Azure CLI yhdistely
 -------------------------
 Molempien komentoja sisältäviä skriptejä voidaan tallettaa PowerShell:in .ps1 tiedostoon yhtälailla.
 
-Molempien komentoja voi käyttää sekaisin samoissa scripteissä, mutta yksi komento on syytä tvoi ottaaehdä yhdellä "kielellä".
+Molempien komentoja voi käyttää sekaisin samoissa scripteissä, mutta yksi komento pitää tehdä yhdellä "kielellä" alusta loppuun.
 
 Jos luo muuttujan yhdellä kielellä, ei voi viitata siihen toisella.
 On kuitenkin mahdollista tallettaa muuttujia ympäristömuuttujiksi yhdellä kielellä ja sitten
