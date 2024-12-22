@@ -1,4 +1,5 @@
-###LUE TÄMÄ LIITTYEN 2. VIIKON AZURE OSUUTEEN
+LUE TÄMÄ LIITTYEN 2. VIIKON AZURE OSUUTEEN
+==========================================
 
 PowerShellin Azure moduulin asennus komento joka annetaan PowerShelliin:
 Install-Module -Name Az -Repository PSGallery -Force
