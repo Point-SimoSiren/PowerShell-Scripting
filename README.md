@@ -17,6 +17,7 @@ Ainakin static web app esimerkki käyttää Azure CLI:tä.
 Azure CLI ei ole PowerShellin oma moduuli vaan sitä voidaan käyttää mm. CMD, PowerShell, Bash.. komentorivityökalulla.
 
 Se voidaan asentaa täältä:
+A [link]
 https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli#install-or-update
 Olen käyttäntyt 4 eri vaihtoehdosta tätä:
 Microsoft Installer (MSI)
