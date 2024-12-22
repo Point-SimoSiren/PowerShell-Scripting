@@ -18,7 +18,7 @@ Azure CLI ei ole PowerShellin oma moduuli vaan sitä voidaan käyttää mm. CMD,
 
 Se voidaan asentaa täältä:
 A [link]
-https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli#install-or-update
+(https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli#install-or-update)
 Olen käyttäntyt 4 eri vaihtoehdosta tätä:
 Microsoft Installer (MSI)
 --------------------------------------------------------------------------
