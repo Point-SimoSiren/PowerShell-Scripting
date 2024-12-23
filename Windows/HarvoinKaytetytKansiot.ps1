@@ -22,12 +22,12 @@ if (-Not (Test-Path -Path $folderPath)) {
     exit
 }
 
-# Haetaan kaikki kansiot ja suodatetaan ne, joita ei ole käytetty annettuun päivämäärään mennessä
+# Haetaan kaikki kansiot ja suodatetaan ne, joita ei ole käytetty annetun pvm jälkeen
 $oldFolders = Get-ChildItem -Path $folderPath -Directory | Where-Object {
     $_.LastAccessTime -lt $dateThreshold
 }
 
-# Tulostetaan tulokset
+# Tulokset terminaaliin
 if ($oldFolders.Count -eq 0) {
     Write-Output "Ei löytynyt kansioita, joita ei olisi käytetty $months kuukauteen."
 } else {

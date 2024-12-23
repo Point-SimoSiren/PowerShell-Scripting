@@ -4,7 +4,7 @@
 # Install-Module -Name SqlServer -AllowClobber -Force
 
 
-# Korvaa arvot todellisen tietokannan oikeilla arvoilla
+# Korvaa arvot todellisen olemassaolevan tietokannan oikeilla arvoilla
 $serverName = "luotavaserverinnimi.database.windows.net"
 $databaseName = "minundb"
 $username = "xxxxxx"
