@@ -12,11 +12,12 @@ LUE TÄMÄ LIITTYEN 2. VIIKON AZURE OSUUTEEN
 
 PowerShell Azure moduuli (Az)
 --------------------------
-Asennus komento joka annetaan PowerShelliin:
-Install-Module -Name Az -Repository PSGallery -Force
+Anna asennuskomento PowerShelliin missä tahansa hakemistopolussa:
+**Install-Module -Name Az -Repository PSGallery -Force**
 
 Moduuli käyttää PowerShellille tyypillistä Verbi-Substantiivi komentotyyliä.
-Ainakin MVC julkaisuesimerkki hyödyntää tätä moduulia.
+Jos omaa kokemusta PowerShellistä ja esim. system admin taustaa tämä työkalu voi olla mieluisampi.
+Kurssimme ASP.NET Core MVC julkaisuesimerkki hyödyntää tätä moduulia.
 
 Jos tarvitsee päivittää moduuli joskus:
 Update-Module -Name Az -Force
@@ -25,10 +26,16 @@ Azure CLI
 ---------
 
 Azure CLI ei ole PowerShellin oma moduuli vaan sitä voidaan käyttää mm. CMD, PowerShell, Bash.. komentorivityökalulla.
-Ainakin static web app esimerkki kurssillamme käyttää Azure CLI:tä.
+Static web app esimerkki kurssillamme käyttää Azure CLI:tä.
 
-Azure CLI voidaan asentaa täältä:
-https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli#install-or-update
+Azure CLI:n (Command-Line Interface) komentojen tyyli on enemmän komentorivipohjainen ja yksinkertainen, sillä se seuraa yleistä Unix/Linux tyyliä ja syntaksia. Komennot ovat lyhyitä ja selkeitä, ja niitä käytetään usein yhdistettäväksi putkikomennoiksi ja skripteihin.
+
+Erityisesti Azure CLI:n komennot muistuttavat enemmän tavallisia Linux tai macOS -terminaalikomentoja. Esimerkiksi komennot ovat usein muotoa az <resource> <action> <parameters>. Tämä rakenne on hyvin samanlainen kuin monissa muissa komentorivipohjaisissa työkaluissa.
+
+Azure CLI:n komennot ovat siis tiiviitä ja suoria, ja ne on suunniteltu siten, että käyttäjä voi helposti kirjoittaa ne komentoriville ilman tarvetta erillisille PowerShell-objekteille tai -moduuleille.
+
+Asenna Azure CLI täältä:
+**https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli#install-or-update**
 
 Asennussivulla on 4 eri vaihtoehtoa asennukseen. Olen käyttänyt Microsoft Installer (MSI):tä ja 64 bittistä versiota.
 Se on toiminut hyvin.

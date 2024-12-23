@@ -7,11 +7,11 @@
 # tutoriaalille omistetusta reposta
 
 ### Yhdistäminen Azureen ###
-#Connect-AzAccount
+Connect-AzAccount
 
 # Muuttujia
 $gitrepo="https://github.com/Point-SimoSiren/Core-MVC-Az-Julkaisuun.git"
-$webappname="mvcjulkaisu1000" #nimi pitää olla uniikki, joten vaihda
+$webappname="mvcjulkaisu555" #nimi pitää olla uniikki, joten vaihda
 $location="West Europe"
 
 # Resource groupin luonti
@@ -27,7 +27,7 @@ New-AzWebApp -Name $webappname -Location $location -AppServicePlan $webappname -
 $PropertiesObject = @{
     repoUrl = "$gitrepo";
     branch = "master";
-    isManualIntegration = "false";
+    isManualIntegration = "true";
 }
 # Määritä asetukset
 Set-AzResource -Properties $PropertiesObject -ResourceGroupName myResourceGroup -ResourceType Microsoft.Web/sites/sourcecontrols -ResourceName $webappname/web -ApiVersion 2023-12-01 -Force
