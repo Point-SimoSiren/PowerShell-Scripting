@@ -10,7 +10,7 @@
 Connect-AzAccount
 
 # Muuttujia
-$gitrepo=""https://github.com/Point-SimoSiren/Core-MVC-Az-Julkaisuun.git
+$gitrepo="https://github.com/Point-SimoSiren/Core-MVC-Az-Julkaisuun.git"
 $webappname="esimerkkimvcappservice" #nimi pitää olla uniikki, joten vaihda
 $location="West Europe"
 
