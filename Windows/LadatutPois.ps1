@@ -1,7 +1,7 @@
 
 # Putsaa ladatut ja roskakori
 
-$targetPath = "C:\Users\Simppa\Downloads"
+$targetPath = "C:\Users\Simo\Downloads"
 
 $filesToDelete = Get-ChildItem -Path $targetPath
 
@@ -22,4 +22,4 @@ Read-Host -Prompt "Paina Enter sulkeaksesi ikkunan"
 
  # Exe tiedoston luonti em. scriptistä:
 # Install-Module -Name ps2exe -Scope CurrentUser (jos ei ole asennettu ps2exe:ä vielä)
-# Invoke-ps2exe .\LadatutPois.ps1 -output .\LadatutPois.exe
+# Invoke-ps2exe -input .\LadatutPois.ps1 -output .\LadatutPois.exe

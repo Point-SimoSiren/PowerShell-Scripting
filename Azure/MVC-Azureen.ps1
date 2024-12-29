@@ -3,8 +3,8 @@
 
 ### Tällä Scriptillä voi luoda Azureen App servicen joka hakee lähdekoodin GitHubista ###
 
-# Perustuu PowerShellin dokumentaation esimerkkiin joka hakee MVC esimerkki sovelluksen jostain
-# tutoriaalille omistetusta reposta
+# Perustuu PowerShellin dokumentaation esimerkkiin joka haki MVC esimerkki sovelluksen jostain
+# tutoriaalille omistetusta reposta ja oli tehty classisella MVC:llä (ei corella)
 
 ### Yhdistäminen Azureen ###
 Connect-AzAccount
@@ -14,7 +14,8 @@ $gitrepo="https://github.com/Point-SimoSiren/Core-MVC-Az-Julkaisuun.git"
 $webappname="mvcjulkaisu555" #nimi pitää olla uniikki, joten vaihda
 $location="West Europe"
 
-# Resource groupin luonti
+# Resource groupin luonti jos tarvitsee, tai muuten seuravassa komennossa annettava sen nimi
+# ja tämä kommentoida pois
 New-AzResourceGroup -Name myResourceGroup -Location $location
 
 # Ilmainen plan

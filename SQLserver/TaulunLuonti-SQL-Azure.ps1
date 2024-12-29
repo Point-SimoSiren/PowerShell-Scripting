@@ -22,5 +22,4 @@ CREATE TABLE Employees (
 $securePassword = ConvertTo-SecureString -String $password -AsPlainText -Force
 $sqlCredential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $username, $securePassword
 
-# Run the SQL command to create the table
 Invoke-Sqlcmd -ServerInstance $serverName -Database $databaseName -Credential $sqlCredential -Query $tableCreateQuery
