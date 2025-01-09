@@ -8,15 +8,13 @@
 # ja siirtää sen esim. toiselle asemalle
 
 # Kansion polku, joka halutaan pakata
-$SourceFolder = "C:\Koodit\PS-SCRIPTIT"
+$SourceFolder = "C:\Koodit"
+
+# Yksilöivä aikaleima tiedostonimeä varten
+$aikaleima = Get-Date -Format "yyyyMMdd_HHmmss"
 
 # ZIP-tiedoston kohdepolku ja nimi
-$DestinationZip = "C:\Varmuuskopiot\PS-Scriptit.zip"
-
-# Varmista, että kohdetiedosto ei ole jo olemassa
-if (Test-Path $DestinationZip) {
-    Remove-Item $DestinationZip
-}
+$DestinationZip = "C:\Varmuuskopiot\" + $aikaleima + ".zip"
 
 # Pakkaa kansio ZIP-tiedostoksi
 Add-Type -AssemblyName System.IO.Compression.FileSystem
