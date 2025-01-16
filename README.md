@@ -46,6 +46,10 @@ Molempien komentoja sisältäviä skriptejä voidaan tallettaa PowerShell:in .ps
 
 Molempien komentoja voi käyttää sekaisin samoissa scripteissä, mutta yksi komento pitää tehdä yhdellä "kielellä" alusta loppuun.
 
+Jos luo muuttujan yhdellä kielellä, ei voi viitata siihen toisella.
+On kuitenkin mahdollista tallettaa muuttujia ympäristömuuttujiksi yhdellä kielellä ja sitten
+toinen kieli perustaa oman muuttujansa ja hakee sille arvon siitä ympäristömuuttujasta suoritustilanteessa.
+
 ### PILVIPALVELUN ERILAISET TASOT
 
 Pilvipalvelumallit: PaaS, SaaS, IaaS ja muut
@@ -128,6 +132,3 @@ Pilvipalvelut tarjoavat monipuolisia ratkaisuja erilaisiin tarpeisiin, olipa kys
 
 
 
-Jos luo muuttujan yhdellä kielellä, ei voi viitata siihen toisella.
-On kuitenkin mahdollista tallettaa muuttujia ympäristömuuttujiksi yhdellä kielellä ja sitten
-toinen kieli perustaa oman muuttujansa ja hakee sille arvon siitä ympäristömuuttujasta suoritustilanteessa.
