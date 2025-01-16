@@ -46,6 +46,88 @@ Molempien komentoja sisältäviä skriptejä voidaan tallettaa PowerShell:in .ps
 
 Molempien komentoja voi käyttää sekaisin samoissa scripteissä, mutta yksi komento pitää tehdä yhdellä "kielellä" alusta loppuun.
 
+PILVIPALVELUN ERILAISET TASOT
+
+**Pilvipalvelumallit: PaaS, SaaS, IaaS ja muut**
+
+### 1. Mitä pilvipalvelut ovat?
+Pilvipalvelut tarjoavat mahdollisuuden käyttää IT-resursseja internetin välityksellä ilman tarvetta omille fyysisille laitteille tai infrastruktuurille. Palvelut jaetaan yleensä kolmeen päämalliin: **IaaS**, **PaaS** ja **SaaS**. Muita malleja ovat muun muassa **FaaS** ja **DaaS**.
+
+---
+
+### 2. Päämallit
+
+#### **IaaS: Infrastructure as a Service**
+- **Sisältö:**
+  - Virtuaaliset palvelimet
+  - Tallennustila
+  - Verkkoyhteydet
+  - Perusinfrastruktuuri
+- **Kenelle sopii:** Yrityksille, jotka haluavat hallita IT-infrastruktuuriaan ilman fyysisiä laitteita.
+- **Esimerkkejä:** Amazon Web Services (AWS), Microsoft Azure, Google Compute Engine
+- **Hyödyt:**
+  - Skaalautuvuus
+  - Maksat vain käytöstä
+  - Ei laitteiston hallinnan tarvetta
+
+#### **PaaS: Platform as a Service**
+- **Sisältö:**
+  - Kehitysalustat
+  - Sovelluskehitystyökalut
+  - Tietokanta-alustat
+- **Kenelle sopii:** Kehittäjille ja ohjelmistotiimeille, jotka tarvitsevat valmiin alustan sovellusten rakentamiseen ja ajamiseen.
+- **Esimerkkejä:** Heroku, Google App Engine, Microsoft Azure App Services
+- **Hyödyt:**
+  - Nopeuttaa kehitystyötä
+  - Ei tarvetta infrastruktuurin hallinnalle
+  - Helppo integrointi muihin palveluihin
+
+#### **SaaS: Software as a Service**
+- **Sisältö:**
+  - Valmiit ohjelmistot, joita käytetään internetin kautta
+- **Kenelle sopii:** Loppukäyttäjille, jotka haluavat käyttää ohjelmistoja ilman asennuksia tai päivityksiä.
+- **Esimerkkejä:** Microsoft 365, Google Workspace, Salesforce
+- **Hyödyt:**
+  - Helppokäyttöisyys
+  - Automatisoidut päivitykset
+  - Käyttö millä tahansa laitteella, jossa on verkkoyhteys
+
+---
+
+### 3. Muut pilvipalvelumallit
+
+#### **FaaS: Function as a Service**
+- **Sisältö:**
+  - Palvelu, jossa ajataan yksittäisiä koodifunktioita ilman palvelimen hallintaa.
+- **Esimerkkejä:** AWS Lambda, Google Cloud Functions
+- **Hyödyt:**
+  - Maksat vain koodin suorituksesta
+  - Ei jatkuvaa infrastruktuurikustannusta
+
+#### **DaaS: Desktop as a Service**
+- **Sisältö:**
+  - Etätyöpöydät, joita voidaan käyttää mistä tahansa laitteesta.
+- **Esimerkkejä:** Citrix Virtual Apps and Desktops, VMware Horizon Cloud
+- **Hyödyt:**
+  - Mahdollistaa etätyöskentelyn
+  - Helppo hallittavuus keskitetysti
+
+---
+
+### 4. Vertailu
+| **Ominaisuus**      | **IaaS**             | **PaaS**              | **SaaS**              | **FaaS**              | **DaaS**              |
+|---------------------|---------------------|-----------------------|-----------------------|-----------------------|-----------------------|
+| **Hallitsema taso** | Infrastruktuuri      | Alusta                | Sovellus              | Funktiot              | Työpöytä              |
+| **Skaalautuvuus**   | Korkea              | Korkea                | Rajallinen           | Korkea               | Keskitetty            |
+| **Helppous**        | Vaatii hallintaa    | Helppokäyttöisempi    | Erittäin helppo      | Kehittäjille          | Loppukäyttäjille        |
+
+---
+
+### 5. Yhteenveto
+Pilvipalvelut tarjoavat monipuolisia ratkaisuja erilaisiin tarpeisiin, olipa kyseessä infrastruktuurin, sovelluskehityksen tai valmiiden ohjelmistojen käyttö. Oikean mallin valinta riippuu organisaation tavoitteista, resursseista ja tarpeista.
+
+
+
 Jos luo muuttujan yhdellä kielellä, ei voi viitata siihen toisella.
 On kuitenkin mahdollista tallettaa muuttujia ympäristömuuttujiksi yhdellä kielellä ja sitten
 toinen kieli perustaa oman muuttujansa ja hakee sille arvon siitä ympäristömuuttujasta suoritustilanteessa.
