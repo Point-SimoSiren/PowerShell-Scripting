@@ -3,6 +3,8 @@
 # Pitää olla asennettuna ao. PowerShellin moduuli:
 # Install-Module -Name SqlServer -AllowClobber -Force
 
+## HUOM! @ merkin jälkeen (rivi 14) voidaan antaa SQL lause ja sen myötä suorittaa mitä ##
+## tahansa SQL kielisiä toimintoja PowerShell scriptissä, ei vain taulun luontia ##
 
 # Korvaa arvot todellisen olemassaolevan tietokannan oikeilla arvoilla
 $serverName = "luotavaserverinnimi.database.windows.net"
