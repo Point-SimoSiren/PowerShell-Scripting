@@ -26,6 +26,9 @@ $adminCreds = Get-Credential # dialogi boksi avautuu minne pääsee antamaan uud
 # Sitten tulee varsinainen SQL serverin luontikomento
 New-AzSqlServer -ResourceGroupName $resourceGroupName -ServerName $serverName -Location $location -SqlAdministratorCredentials $adminCreds 
 
+## HUOM! Seuraava osuus voisi myös olla muussakin yhteydessä oma erillinen scripti, 
+## jolla voidaan päivittää nykyinen ip osoite Azure palomuuriin esim. ajastetusti tai exe kuvaketta klikkaamalla!
+
 # Lisätään oma ip azure sql palvelimen palomuuriin sallituksi
 $myPublicIp = (Invoke-WebRequest -Uri "http://ifconfig.me/ip").Content.Trim()  # Haetaan oma public IP
 
