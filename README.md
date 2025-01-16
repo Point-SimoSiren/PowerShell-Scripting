@@ -46,9 +46,9 @@ Molempien komentoja sisältäviä skriptejä voidaan tallettaa PowerShell:in .ps
 
 Molempien komentoja voi käyttää sekaisin samoissa scripteissä, mutta yksi komento pitää tehdä yhdellä "kielellä" alusta loppuun.
 
-PILVIPALVELUN ERILAISET TASOT
+### PILVIPALVELUN ERILAISET TASOT
 
-**Pilvipalvelumallit: PaaS, SaaS, IaaS ja muut**
+Pilvipalvelumallit: PaaS, SaaS, IaaS ja muut
 
 ### 1. Mitä pilvipalvelut ovat?
 Pilvipalvelut tarjoavat mahdollisuuden käyttää IT-resursseja internetin välityksellä ilman tarvetta omille fyysisille laitteille tai infrastruktuurille. Palvelut jaetaan yleensä kolmeen päämalliin: **IaaS**, **PaaS** ja **SaaS**. Muita malleja ovat muun muassa **FaaS** ja **DaaS**.
