@@ -7,7 +7,7 @@
 ## tahansa SQL kielisiä toimintoja PowerShell scriptissä, ei vain taulun luontia ##
 
 # Korvaa arvot todellisen olemassaolevan tietokannan oikeilla arvoilla
-$serverName = "luotavaserverinnimi.database.windows.net"
+$serverName = "serverinnimi.database.windows.net"
 $databaseName = "minundb"
 
 $tableCreateQuery = @"
